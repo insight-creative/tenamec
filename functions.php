@@ -183,26 +183,6 @@ function my_acf_admin_head() {
     <?php
 }
 add_action('acf/input/admin_head', 'my_acf_admin_head');
-function wpb_list_child_pages() {
-
-global $post;
-
-if ( is_page() && $post->post_parent )
-
-    $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
-else
-    $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
-
-if ( $childpages ) {
-
-    $string = '<ul>' . $childpages . '</ul>';
-}
-
-return $string;
-
-}
-
-add_shortcode('wpb_childpages', 'wpb_list_child_pages');
 /*********************************************************
 Enqueue scripts and styles
 *********************************************************/
@@ -210,12 +190,7 @@ function insightcustom_scripts() {
 	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'insightcustom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'insightcustom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script('AOS', get_stylesheet_directory_uri() . '/assets/aos/aos.js');
-	wp_enqueue_script('rellax', get_stylesheet_directory_uri() . '/assets/rellax/rellax.min.js');
-	wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/assets/swiper/swiper.min.js');
 	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/js/customJS.js');
-	wp_enqueue_style( 'AOS-Styles', get_stylesheet_directory_uri() . '/assets/aos/aos.css');
-	wp_enqueue_style( 'Swiper-styles', get_stylesheet_directory_uri() . '/assets/swiper/swiper.min.css');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

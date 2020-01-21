@@ -7,28 +7,12 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: $black;
-	margin-top: 200px;
+	border-top: 20px solid $brandColor;
 }
-.footerContent{
-	padding: 0;
-	@include breakpoint (tabletScreen) {
-		padding: 20px;
-	}
-	p {
-		font-size: 16px;
-		line-height: 1.4em;
-		max-width: 600px;
-	}
-}
-#footerLogo {
-  display: flex;
-  justify-content: flex-end;
-  .custom-logo-link {
-    img {
-			max-width: 75px;
-			height: auto;
-		}
-  }
+#footerSecond {
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
 }
 #copyright{
 	color: $white;
@@ -49,21 +33,4 @@
           -ms-flex-direction: row;
               flex-direction: row;
     }
-		a:first-of-type {
-			margin-left: 10px;
-		}
-		a {
-			color: $white;
-			margin-right: 5px;
-			transition: .2s ease;
-			&:hover {
-				color: $lightGrey;
-				transition: .2s ease;
-			}
-		}
-}
-#footerContent {
-	padding: 10px;
-	display: flex;
-	align-items: center;
 }

@@ -7,113 +7,71 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<a id="main-content" tabindex="-1"></a>
-		<?php
-		// check if the flexible content field has rows of data
-		if( have_rows('flexible_fields') ):
-	    // loop through the rows of data
-	    while ( have_rows('flexible_fields') ) : the_row();
-				///////////////////////////////////
-				// Simple Two Column Block
-				//////////////////////////////////
-				if( get_row_layout() == 'two_column' ):
-					?>
-					<section id="<?php echo get_sub_field('section_name'); ?>" class="paddedSection">
-						<?php
-						$col_1 = get_sub_field('col_content_1');
-						$col_2 = get_sub_field('col_content_2');
-						?>
-						<div class="pageWidth flexContainer centerAlignedContainer">
-							<?php
-							if( $col_1 ): ?>
-								<div class="col50">
-									<div class="blockText">
-										<?php echo $col_1 ?>
-									</div>
-								</div>
-							<?php endif;
-							if( $col_2 ): ?>
-								<div class="col50">
-									<div class="blockText">
-										<?php echo $col_2 ?>
-									</div>
-								</div>
-							<?php
-							endif;
-							?>
+		<div class="fullWidth brandsContainerOuter">
+			<div class="mobileHeroTitleOuter">
+				<div class="mobileHeroTitleInner">
+					<h1>Durable Material Handling Solutions</h1>
+				</div>
+			</div>
+			<div class="brandsContainerInner flexContainer">
+				<div id="sas" class="col30">
+					<div class="imageContainer">
+						<div class="imageContainerInner">
+							<img src="/wp-content/themes/insightcustom/images/sas-extreme-close-up.jpg" class="blockImage">
 						</div>
-					</section>
-					<?php
-					///////////////////////////////////
-					// Simple Three Column Block
-					//////////////////////////////////
-					elseif( get_row_layout() == 'three_column' ):
-					?>
-					<section id="<?php echo get_sub_field('section_name'); ?>" class="paddedSection">
-					<?php
-					if(get_sub_field('section_title')):
-					?>
-					<div class="pageWidth">
-		        <?php echo get_sub_field('section_title'); ?>
-		      </div>
-					<?php endif; ?>
-						<?php
-							$col_1 = get_sub_field('col_content_1');
-							$col_2 = get_sub_field('col_content_2');
-							$col_3 = get_sub_field('col_content_3');
-						?>
-						<div class="pageWidth flexContainer">
-						<?php
-							if( $col_1 ): ?>
-								<div class="col30">
-									<div class="blockText">
-										<?php echo $col_1 ?>
-									</div>
-								</div>
-							<?php endif;
-							if( $col_2 ): ?>
-								<div class="col30">
-									<div class="blockText">
-										<?php echo $col_2 ?>
-									</div>
-								</div>
-							<?php endif;
-							if( $col_3 ): ?>
-								<div class="col30">
-									<div class="blockText">
-										<?php echo $col_3 ?>
-									</div>
-								</div>
-							<?php
-							endif;
-							?>
+					</div>
+					<div class="brandLogoWrap">
+						<div class="brandLogoInner">
+							<img src="/wp-content/themes/insightcustom/images/SAS-logo.jpg" class="blockImage">
 						</div>
-					</section>
-					<?php
-					///////////////////////////////////
-					// Testimonial
-					//////////////////////////////////
-					elseif( get_row_layout() == 'testimonial' ):
-					$testimonial = get_sub_field('testimonial_contents');
-					?>
-					<section id="<?php echo get_sub_field('section_name'); ?>" class="paddedSection testimonial">
-					  <div class="limitWidth">
-					    <div class="blockText greenBorder centerText">
-								<?php echo $testimonial ?>
-							</div>
-					  </div>
-					</section>
-					<?php
-				endif;
-			endwhile;
-		endif;
-		?>
-		<div class="navWidth">
-			<?php
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/content', 'page' );
-			endwhile; // End of the loop.
-			?>
+					</div>
+				</div>
+				<div id="lemco" class="col30">
+					<div class="imageContainer">
+						<div class="imageContainerInner">
+							<img src="/wp-content/themes/insightcustom/images/lemco-attachment-close-up.jpg" class="blockImage">
+						</div>
+					</div>
+					<div class="brandLogoWrap">
+						<div class="brandLogoInner">
+							<img src="/wp-content/themes/insightcustom/images/lemco-logo-header.png" class="blockImage">
+						</div>
+					</div>
+				</div>
+				<div id="builtrite" class="col30">
+					<div class="imageContainer">
+						<div class="imageContainerInner">
+							<img src="/wp-content/themes/insightcustom/images/builtrite-close-up.jpg" class="blockImage">
+						</div>
+					</div>
+					<div class="brandLogoWrap">
+						<div class="brandLogoInner">
+							<img src="/wp-content/themes/insightcustom/images/Builtrite-Crane-logo-gold.jpg" class="blockImage">
+						</div>
+					</div>
+				</div>
+				<div class="overlay">
+					<h1>Durable Material Handling Solutions</h1>
+				</div>
+			</div>
+		</div>
+		<div class="pageContentContainer limitWidth paddedSection">
+			<p>
+				We are TENAMEC—where tenacious and mechanical fuse. TENAMEC is proud to create the world’s most
+				durable material handling solutions under the Builtrite, SAS Forks and Lemco brands.
+			</p>
+			<p>
+				In mines, quarries and forests, at scrap yards and recycling facilities, and on rail lines across
+				the country, TENAMEC delivers. Our handlers, attachments, forks and other products perform
+				tirelessly … day after day, month after month, year after year. We’re an investment that pays off
+				with increased productivity over the long haul.
+			</p>
+			<p>
+				Rely on TENAMEC for durability, expertise, proprietary technology and superior customer service!
+			</p>
+			<p>
+				TENAMEC—tenacious, mechanical material handling solutions—engineered tough to get your job done.
+			</p>
 		</div>
 	</main>
 </div>

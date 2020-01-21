@@ -1,3 +1,60 @@
 /*--------------------------------------------------------------
 11.0 Homepage
 --------------------------------------------------------------*/
+.mobileHeroTitleOuter {
+  background-color: $black;
+  color: $white;
+  padding: 50px 20px;
+  text-align: center;
+  @include breakpoint (tabletScreen) {
+    display: none;
+  }
+}
+.brandsContainerOuter {
+  border-bottom: 10px solid $black;
+  .brandsContainerInner {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+}
+.imageContainer {
+  background-color: $black;
+  padding-top: 10px;
+}
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  background-color: rgba(0,0,0,0.6);
+  height: calc(100% - 180px);
+  width: 100%;
+  z-index: 2;
+  h1 {
+    color: $white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+    display: none;
+    @include breakpoint (tabletScreen) {
+      display: flex;
+    }
+  }
+}
+.brandLogoWrap {
+  .brandLogoInner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    img {
+      width: 25%;
+    }
+  }
+}
+.pageContentContainer {
+  text-align: center;
+}

@@ -3,13 +3,12 @@
 --------------------------------------------------------------*/
 body{
 	background: $white;
+	background-image: url("/wp-content/themes/insightcustom/images/gradient-background-tall.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	margin: 0;
-}
-.site-content {
-	margin-top: 25px;
-	@include breakpoint (laptopScreen) {
-		margin-top: 150px;
-	}
+	border-top: 20px solid $brandColor;
 }
 .screen-reader-text{
   border: 0;
@@ -36,16 +35,4 @@ body{
 ::-ms-selection{
 	background: rgba( 182, 174, 140, .5);
 	color: $white;
-}
-#privacyPolicy{
-	@include breakpoint(smallScreen){
-			margin-top: 110px;
-	}
-	@include breakpoint(largeMobileScreen){
-			margin-top: 125px;
-	}
-}
-ul {
-	padding: 15px;
-	margin: 0;
 }
