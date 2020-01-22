@@ -22,7 +22,9 @@ get_header();
 					</div>
 					<div class="brandLogoWrap">
 						<div class="brandLogoInner">
-							<img src="/wp-content/themes/insightcustom/images/SAS-logo.jpg" class="blockImage">
+							<a href="https://www.sasforks.com/" target="_blank">
+								<img src="/wp-content/themes/insightcustom/images/sas-logo-for-landing-page.png" class="blockImage">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -34,7 +36,7 @@ get_header();
 					</div>
 					<div class="brandLogoWrap">
 						<div class="brandLogoInner">
-							<img src="/wp-content/themes/insightcustom/images/lemco-logo-header.png" class="blockImage">
+							<img src="/wp-content/themes/insightcustom/images/lemco-logo-for-landing-page.png" class="blockImage">
 						</div>
 					</div>
 				</div>
@@ -46,7 +48,9 @@ get_header();
 					</div>
 					<div class="brandLogoWrap">
 						<div class="brandLogoInner">
-							<img src="/wp-content/themes/insightcustom/images/Builtrite-Crane-logo-gold.jpg" class="blockImage">
+							<a href="https://builtrite.com/" target="_blank">
+								<img src="/wp-content/themes/insightcustom/images/builtrite-logo-for-landing-page.png" class="blockImage">
+							</a>
 						</div>
 					</div>
 				</div>

@@ -16,6 +16,12 @@
     display: flex;
     position: relative;
     z-index: 1;
+    img {
+      margin-bottom: 5px;
+      @include breakpoint (tabletScreen) {
+        margin-bottom: 3px;
+      }
+    }
   }
 }
 .imageContainer {
@@ -23,23 +29,26 @@
   padding-top: 10px;
 }
 .overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: " ";
-  background-color: rgba(0,0,0,0.6);
-  height: calc(100% - 180px);
-  width: 100%;
-  z-index: 2;
-  h1 {
-    color: $white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.9);
-    display: none;
-    @include breakpoint (tabletScreen) {
-      display: flex;
+  display: none;
+  @include breakpoint (tabletScreen) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    background-color: rgba(0,0,0,0.6);
+    height: calc(100% - 165px);
+    width: 100%;
+    z-index: 2;
+    h1 {
+      color: $white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.9);
+      display: none;
+      @include breakpoint (tabletScreen) {
+        display: flex;
+      }
     }
   }
 }
@@ -49,9 +58,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 175px;
+    height: 165px;
     img {
-      width: 25%;
+      width: 40%;
+      @include breakpoint (largeMobileScreen) {
+        width: 30%;
+      }
+      @include breakpoint (tabletScreen) {
+        width: 65%;
+      }
+      @include breakpoint (largeScreen) {
+        width: 45%;
+      }
+    }
+  }
+}
+#lemco {
+  .brandLogoWrap {
+    .brandLogoInner {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 165px;
+      img {
+        width: 40%;
+        @include breakpoint (largeMobileScreen) {
+          width: 30%;
+        }
+        @include breakpoint (tabletScreen) {
+          width: 65%;
+        }
+        @include breakpoint (largeScreen) {
+          width: 35%;
+        }
+        @include breakpoint (extraLargeScreen) {
+          width: 32%;
+        }
+        @include breakpoint (megaScreen) {
+          width: 28%;
+        }
+      }
     }
   }
 }
