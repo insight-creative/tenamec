@@ -13,6 +13,8 @@
 .brandsContainerOuter {
   border-bottom: 10px solid $black;
   .brandsContainerInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 1;
@@ -31,9 +33,15 @@
 .overlay {
   display: none;
   @include breakpoint (tabletScreen) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -47,6 +55,8 @@
       text-shadow: 0 0 10px rgba(0,0,0,0.9);
       display: none;
       @include breakpoint (tabletScreen) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
       }
     }
@@ -55,9 +65,15 @@
 .brandLogoWrap {
   .brandLogoInner {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 165px;
     img {
       width: 40%;
@@ -77,9 +93,15 @@
   .brandLogoWrap {
     .brandLogoInner {
       text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 165px;
       img {
         width: 40%;

@@ -454,7 +454,11 @@ Font Variables
   border-top: 20px solid #000000; }
 
 #logoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 95%; }
 
@@ -485,7 +489,11 @@ nav {
 
 #footerSecond {
   padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 #copyright {
@@ -593,16 +601,31 @@ body {
   word-wrap: normal !important; }
 
 ::-moz-selection {
-  background: rgba(182, 174, 140, 0.5);
+  background: rgba(255, 204, 6, 0.5);
+  color: #FFFFFF; }
+
+::-moz-selection {
+  background: rgba(255, 204, 6, 0.5);
   color: #FFFFFF; }
 
 ::selection {
-  background: rgba(182, 174, 140, 0.5);
+  background: rgba(255, 204, 6, 0.5);
   color: #FFFFFF; }
 
 ::-ms-selection {
-  background: rgba(182, 174, 140, 0.5);
+  background: rgba(255, 204, 6, 0.5);
   color: #FFFFFF; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  background-color: #000000; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc06; }
 
 /*--------------------------------------------------------------
 11.0 Homepage
@@ -619,6 +642,8 @@ body {
 .brandsContainerOuter {
   border-bottom: 10px solid #000000; }
   .brandsContainerOuter .brandsContainerInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 1; }
@@ -636,8 +661,14 @@ body {
   display: none; }
   @media (min-width: 768px) {
     .overlay {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       position: absolute;
       top: 0;
@@ -653,12 +684,20 @@ body {
         display: none; } }
     @media (min-width: 768px) and (min-width: 768px) {
       .overlay h1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; } }
 
 .brandLogoWrap .brandLogoInner {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 165px; }
   .brandLogoWrap .brandLogoInner img {
@@ -675,8 +714,14 @@ body {
 
 #lemco .brandLogoWrap .brandLogoInner {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 165px; }
   #lemco .brandLogoWrap .brandLogoInner img {

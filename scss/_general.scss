@@ -25,14 +25,29 @@ body{
 }
 // Style highlight to match our themes colors
 ::-moz-selection{
-		background: rgba( 182, 174, 140, .5);
+		background: rgba( 255, 204, 6, .5);
+		color: $white;
+}
+::-moz-selection{
+		background: rgba( 255, 204, 6, .5);
 		color: $white;
 }
 ::selection{
-		background: rgba( 182, 174, 140, .5);
+		background: rgba( 255, 204, 6, .5);
 		color: $white;
 }
 ::-ms-selection{
-	background: rgba( 182, 174, 140, .5);
+	background: rgba( 255, 204, 6, .5);
 	color: $white;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    background-color: $black;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: $black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $brandColor;
 }
