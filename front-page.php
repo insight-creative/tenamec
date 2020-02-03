@@ -31,7 +31,7 @@ get_header();
 				<div id="lemco" class="col30">
 					<div class="imageContainer">
 						<div class="imageContainerInner">
-							<img src="/wp-content/themes/insightcustom/images/lemco-attachment-close-up.jpg" class="blockImage">
+							<img src="/wp-content/themes/insightcustom/images/Lemco-Model-8000-Attachment.jpg" class="blockImage">
 						</div>
 					</div>
 					<div class="brandLogoWrap">
@@ -43,7 +43,7 @@ get_header();
 				<div id="builtrite" class="col30">
 					<div class="imageContainer">
 						<div class="imageContainerInner">
-							<img src="/wp-content/themes/insightcustom/images/builtrite-close-up.jpg" class="blockImage">
+							<img src="/wp-content/themes/insightcustom/images/Builtrite-material-handling-solutions.jpg" class="blockImage">
 						</div>
 					</div>
 					<div class="brandLogoWrap">
