@@ -65,13 +65,14 @@ get_header();
 				durable material handling solutions under the Builtrite, SAS Forks and Lemco brands.
 			</p>
 			<p>
-				In mines, quarries and forests, at scrap yards and recycling facilities, and on rail lines across
-				the country, TENAMEC delivers. Our handlers, attachments, forks and other products perform
-				tirelessly … day after day, month after month, year after year. We’re an investment that pays off
-				with increased productivity over the long haul.
+				In mines, quarries and forests, at recycling facilities and on rail lines across the country,
+				TENAMEC delivers. Our handlers, attachments, forks and other products perform tirelessly day after
+				day, month after month, year after year.
 			</p>
 			<p>
-				Rely on TENAMEC for durability, expertise, proprietary technology and superior customer service!
+				Whether in utilities, scrap processing, construction, auto and material recycling or solid waste
+				processing … we’re an investment that pays off with increased productivity over the long haul. Rely
+				on TENAMEC for durability, expertise, proprietary technology and superior customer service!
 			</p>
 			<p>
 				TENAMEC—tenacious, mechanical material handling solutions—engineered tough to get your job done.
