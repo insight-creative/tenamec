@@ -83,6 +83,9 @@
       @include breakpoint (tabletScreen) {
         width: 65%;
       }
+      @include breakpoint (laptopScreen) {
+        width: 50%;
+      }
       @include breakpoint (largeScreen) {
         width: 45%;
       }
@@ -110,6 +113,9 @@
         }
         @include breakpoint (tabletScreen) {
           width: 65%;
+        }
+        @include breakpoint (laptopScreen) {
+          width: 50%;
         }
         @include breakpoint (largeScreen) {
           width: 35%;

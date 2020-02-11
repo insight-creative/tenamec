@@ -708,6 +708,9 @@ body {
     @media (min-width: 768px) {
       .brandLogoWrap .brandLogoInner img {
         width: 65%; } }
+    @media (min-width: 992px) {
+      .brandLogoWrap .brandLogoInner img {
+        width: 50%; } }
     @media (min-width: 1400px) {
       .brandLogoWrap .brandLogoInner img {
         width: 45%; } }
@@ -732,6 +735,9 @@ body {
     @media (min-width: 768px) {
       #lemco .brandLogoWrap .brandLogoInner img {
         width: 65%; } }
+    @media (min-width: 992px) {
+      #lemco .brandLogoWrap .brandLogoInner img {
+        width: 50%; } }
     @media (min-width: 1400px) {
       #lemco .brandLogoWrap .brandLogoInner img {
         width: 35%; } }
