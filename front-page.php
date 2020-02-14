@@ -28,7 +28,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div id="lemco" class="col30">
+				<div class="col30">
 					<div class="imageContainer">
 						<div class="imageContainerInner">
 							<img src="/wp-content/themes/insightcustom/images/Lemco-Model-8000-Attachment.jpg" class="blockImage">
@@ -36,7 +36,9 @@ get_header();
 					</div>
 					<div class="brandLogoWrap">
 						<div class="brandLogoInner">
-							<img src="/wp-content/themes/insightcustom/images/lemco-logo-for-landing-page.png" class="blockImage">
+							<a href="https://lemcohydraulics.com/" target="_blank">
+								<img src="/wp-content/themes/insightcustom/images/lemco-logo-for-landing-page.png" class="blockImage">
+							</a>
 						</div>
 					</div>
 				</div>
